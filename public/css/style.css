@@ -1,0 +1,131 @@
+body {
+  background-color: #000;
+  background-color: #DDD;
+  color: #fff;
+  font-family: Arial, Verdana, sans-serif;
+  font-family: Share Tech Mono;
+  font-size: 16px;
+}  
+
+.wrapper {
+  background-color: #444;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px #000;
+  margin: auto;
+  max-width: 1024px;
+  min-width: 250px;
+}
+
+header {
+  background-color: #FFF;
+  border: 1px solid #000;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  position: relative;
+}
+
+#logo-chase-luke-a {
+  color: #000;
+  font-size: 5em;
+  margin: 0;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+header h2 {
+  color: #FFF;
+  font-size: 1.25em;
+  text-shadow: 1px 1px 3px #000;
+}
+
+#logo-software-dev {
+  left: 10%;
+  position: absolute;
+  top: 0%;
+}
+
+#logo-mobile-dev {
+  bottom: 0%;
+  position: absolute;
+  right: 10%;
+}
+
+nav {
+  float: left;
+  height: 160px;
+  width: 160px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 5px;
+  padding: 3px;
+  width: 100%;
+}
+
+nav a {
+  background-color: #333;
+  border: 1px solid #678;
+  border-radius: 5px;
+  color: #fff;;
+  display: block;
+  padding: 3px;
+  margin: 3px;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+
+section {
+  float: none;
+  margin: 10px;
+  padding-left: 190px;
+}
+
+section h2 {
+  border-bottom: 3px solid #FF0;
+}
+
+#awesome {
+  color: #FF0;
+  margin-left: 10px;
+}
+
+.resume h4 {
+  border: 1px solid #FFF;
+  padding: 3px;
+}
+
+.resume p {
+  font-style: italic;
+  margin-left: 8px;
+}
+
+form {
+  text-align: left;
+}
+
+form label {
+  display: block;
+  margin: 20px 0px 5px 20px;
+}
+
+form input, form textarea {
+  display: block;
+  margin: 5px 0px 5px 20px;
+}
+
+#submit_button {
+  font-size: 1.25em;
+  margin: 20px;
+  width: auto;
+}
+
+footer {
+  border-top: 2px solid #fff;
+  margin: 5px;
+  padding: 4px 0px 2px 0px;
+  text-align: center;
+  text-shadow: 1px 1px 3px #000;
+}

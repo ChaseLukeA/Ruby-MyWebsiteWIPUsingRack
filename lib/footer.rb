@@ -1,28 +1,20 @@
 class Footer
 
-  def initialize(app)
-    @app = app
+  def initialize(copyright_holder="Me")
+    @copyright_holder = copyright_holder
   end
 
-  def call(env)
-    # let the app do its thing
-    status, headers, response = @app.call(env)
-
-    # add to the body
-    response_body = response.join("\n")
-    response_body << %Q{
+  def to_s
+    %Q{
+          <footer>
+            &copy; #{Time.now.year} #{@copyright_holder}
+          </footer>
+        </div>
+        <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
         </body>
-        <footer>
-          Generated #{Time.now}
-        </footer>
       </html>
     }
-
-    # We changed content length, so we must change the header.
-    headers["Content-length"] = response_body.length.to_s
-
-    # put the request back the way it needs to be
-    [status, headers, [response_body] ]
   end
 
 end
